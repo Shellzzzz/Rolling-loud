@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Rolling Loud Countdown</title>
+  <meta name="theme-color" content="#0b0618" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Rolling Loud" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-180.png" />
+  <link rel="icon" href="assets/icons/icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="aurora"></div>
+  <div class="scanlines"></div>
+  <canvas id="stars"></canvas>
+
+  <section class="hero">
+    <div class="sun"></div>
+    <div class="orlando-skyline" aria-hidden="true">
+      <span class="tower"></span><span></span><span></span><span class="wheel"></span><span></span><span></span><span class="tower small"></span>
+    </div>
+
+    <div class="palms palm-left"><div></div></div>
+    <div class="palms palm-right"><div></div></div>
+
+    <main class="card">
+      <p class="eyebrow">ORLANDO • BEACHES • FESTIVAL MODE</p>
+      <h1>Rolling Loud Countdown</h1>
+      <p class="love-note" id="loveNote">Counting down till we outside together 🌴🎡🎤</p>
+
+      <div class="countdown" aria-label="Countdown timer">
+        <div class="time-box"><strong id="days">00</strong><span>Days</span></div>
+        <div class="time-box"><strong id="hours">00</strong><span>Hours</span></div>
+        <div class="time-box"><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div class="time-box"><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+
+      <div class="actions">
+        <button id="musicBtn" type="button">▶ Festival Beat</button>
+        <button id="vibeBtn" type="button">✨ Change Vibe</button>
+      </div>
+
+      <div class="trip-strip">
+        <div><b>🎢 Orlando</b><span>lights, rides, city nights</span></div>
+        <div><b>🏖️ Beaches</b><span>sunset, water, palm trees</span></div>
+        <div><b>🎤 Rolling Loud</b><span>crowd, bass, fireworks</span></div>
+      </div>
+    </main>
+
+    <div class="festival-stage">
+      <div class="beam beam-1"></div>
+      <div class="beam beam-2"></div>
+      <div class="beam beam-3"></div>
+      <div class="stage-top">ROLLING LOUD</div>
+      <div class="speakers"><span></span><span></span></div>
+      <div class="crowd"></div>
+    </div>
+
+    <div class="waves"><div></div><div></div><div></div></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
